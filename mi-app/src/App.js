@@ -1,24 +1,13 @@
-import logo from './logo.svg';
+//Importamos los componentes al documento principal App.js
 import './App.css';
+import Header from './componentes/Header/Header';
+import Formulario from './componentes/Formulario/Formulario';
 
 function App() {
   return (
-    <div className="App">
-      <img src="/img/Header.png" alt='Org'/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola mundo con React
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprende React
-        </a>
-      </header>
+    <div >
+      <Header />
+      <Formulario />
     </div>
   );
 }
