@@ -1,13 +1,10 @@
-import { useState } from "react";
+
 import "./CampoTexto.css";
 
 const CampoTexto = (props)=> {
-    const [valor, actualizarValor] = useState("")
-    console.log("Datos: ", props.titulo);
     const placeholderModificado = `${props.placeholder}...`;
 
     const manejarCambio = (e) => {
-        console.log("cambio", e.target.value);
         props.actualizarValor(e.target.value);
     }
 
